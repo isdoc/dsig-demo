@@ -172,12 +172,14 @@ public class Utils
         XslCompiledTransform xslt = new XslCompiledTransform();
 
         // načtení XSLT kódu z řetězce
+        // kód je trochu obskurní, protože implementace xsl:copy v .NET obsahuje chybu
         XmlReader xr = XmlReader.Create(new StringReader(@"<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>
 <xsl:template match='*'>
-  <xsl:copy>
+  <xsl:element name='{local-name(.)}' namespace='{namespace-uri(.)}'>
+    <xsl:copy-of select='namespace::*[name() != &quot;&quot;]'/>
     <xsl:copy-of select='@*'/>
     <xsl:apply-templates/>
-  </xsl:copy>
+  </xsl:element>
 </xsl:template>
 </xsl:stylesheet>"));
         xslt.Load(xr);
@@ -185,13 +187,13 @@ public class Utils
         // vytvoření dokumentu pro výsledek transformace
         XmlDocument result = new XmlDocument();
         result.PreserveWhitespace = true;
-        
+
         // výstup transformace se postupně zachytává do dokumentu výsledku
         using (XmlWriter xw = result.CreateNavigator().AppendChild())
         {
             xslt.Transform(doc.CreateNavigator(), xw);
         };
-        
+
         return result;
     }
 
