@@ -163,36 +163,23 @@ public class Utils
         return validates;
     }
 
-    // Pomocná metoda pro odstranění komentářů a instrukcí pro zpracování z dokumetu
+    // Pomocná metoda pro odstranění komentářů z dokumetu
     // Ponechány jsou jen důležité části XML -- elementy, atributy a textové uzly
-    // Modifikace dokumentu je realizována pomocí jednoduché transformace XSLT
     public XmlDocument RemoveCommentsAndPIs(XmlDocument doc)
     {
-        // vytvoření XSLT procesoru
-        XslCompiledTransform xslt = new XslCompiledTransform();
-
-        // načtení XSLT kódu z řetězce
-        // kód je trochu obskurní, protože implementace xsl:copy v .NET obsahuje chybu
-        XmlReader xr = XmlReader.Create(new StringReader(@"<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>
-<xsl:template match='*'>
-  <xsl:element name='{local-name(.)}' namespace='{namespace-uri(.)}'>
-    <xsl:copy-of select='namespace::*[name() != &quot;&quot;]'/>
-    <xsl:copy-of select='@*'/>
-    <xsl:apply-templates/>
-  </xsl:element>
-</xsl:template>
-</xsl:stylesheet>"));
-        xslt.Load(xr);
-
-        // vytvoření dokumentu pro výsledek transformace
+        // vytvoření kopie dokumentu
         XmlDocument result = new XmlDocument();
         result.PreserveWhitespace = true;
+        result.AppendChild(result.ImportNode(doc.DocumentElement, true));
 
-        // výstup transformace se postupně zachytává do dokumentu výsledku
-        using (XmlWriter xw = result.CreateNavigator().AppendChild())
+        // vybrání všech komentářů
+        XmlNodeList comments = result.SelectNodes("//comment()");
+
+        // odstranění komentářů
+        foreach(XmlNode n in comments)
         {
-            xslt.Transform(doc.CreateNavigator(), xw);
-        };
+            n.ParentNode.RemoveChild(n);
+        }
 
         return result;
     }
