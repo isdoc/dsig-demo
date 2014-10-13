@@ -10,11 +10,21 @@ Studio 2013, který dovoluje snadné spouštění aplikace. Visual Studio je mo�
 na adrese http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx
 
 > Elektronické podpisy a PKI je poměrně komplexní obor. Před psaním jakékoliv aplikace
-> výrazně doporučujeme seznámit se z celou oblastí, aby z neznalosti nebyla do vaší aplikace
-> zanesene bezpečnostní chyba.
+> výrazně doporučujeme seznámit se s celou oblastí, aby z neznalosti nebyla do vaší aplikace
+> zanesena bezpečnostní chyba.
 
 > Ukázkové aplikace pro zachování jednoduchosti a názornosti některé věci opomíjejí.
 > Např. v tuto chvíli nekontrolují, zda byl certifikán od svého vydání zneplatněn pomocí CRL.
+
+## Obsah ukázkové aplikace
+
+* `src` - adresář se zdrojovým kódem
+  * `Program.cs` - hlavní třída, která volá operace pro podepisování a kontrolu podpisů
+  * `Utils.cs`- pomocná třída s definicií všech důležitých operací
+  * `RSAPKCS1SHA256SignatureDescription.cs`- pomocná třída registrující RSA-SHA-256 pro použití v .NET Frameworku
+* `data`- adresář obsahující ukázkové soubory
+
+## Certifikáty
 
 ### Vygenerování testovacích certifikátů
 

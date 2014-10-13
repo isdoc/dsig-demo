@@ -131,15 +131,19 @@ public class Utils
         XmlNamespaceManager manager = new XmlNamespaceManager(doc.NameTable);
         manager.AddNamespace("dsig", "http://www.w3.org/2000/09/xmldsig#");
 
+        // příznak validnosti podpisu
         bool validates = false;
 
-        // postupné ověření všech podpisů
+        // vybereme všechny podpisy v dokumentu
         XmlNodeList signatures = doc.SelectNodes("/*/dsig:Signature", manager);
 
+        // pokud by v dokumentu nebylani jeden podpis, nemůže být podpis validní
         if (signatures.Count > 0) validates = true;
 
+        // postupné ověření všech nalezených podpisů
         for (int i = 0; i < signatures.Count; i++)
         {
+            // načtení XML reprezentace podpisu
             XmlElement signatureElement = (XmlElement)signatures.Item(i);
 
             // načtení dokumentu do objektu pro práci s podpisy
@@ -149,13 +153,7 @@ public class Utils
             signedDoc.LoadXml(signatureElement);
 
             // kontrola podpisu
-            if (signedDoc.CheckSignature())
-                System.Console.WriteLine("Podpis " + (i + 1) + " je v pořádku.");
-            else
-            {
-                System.Console.WriteLine("Platnost podpisu " + (i + 1) + " se nepodařilo ověřit.");
-                validates = false;
-            }            
+            if (!signedDoc.CheckSignature()) validates = false;
         }
         return validates;
     }

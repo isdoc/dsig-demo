@@ -26,7 +26,7 @@ class Program
         // načtení certifikátu z úložiště
         // certifikát je identifikován svým subjektem
         // pro reálné certifikáty vypadá např. "SERIALNUMBER=P111870, CN=Ing. Jiří Kosek, OU=1, O=Ing. Jiří Kosek [IČ 71612998], C=CZ"
-        X509Certificate2 cert = utils.GetCertificate("CN=Jan Novák");
+        X509Certificate2 cert = utils.GetCertificate("CN=Jan Novák");        
         if (cert == null) Console.WriteLine("Nepodařilo se načíst certifikát.");
 
         // podepsání dokumentu
@@ -47,6 +47,16 @@ class Program
 
         Console.WriteLine("Ukládám podepsaný dokument do priklad-podepsany2.isdoc...");
         doubleSignedDoc.Save("../../../data/priklad-podepsany2.isdoc");
+
+        // ověření podpisů
+        Console.WriteLine("Ověřování podpisů v priklad-podepsany2.isdoc...");
+
+        // načtení dokumentu ze souboru
+        doc.Load("../../../data/priklad-podepsany2.isdoc");
+        if (utils.Verify(doc))
+            Console.WriteLine("Všechny podpisy jsou v pořádku.");
+        else
+            Console.WriteLine("Podpis(y) se nepodařilo ověřit.");
 
         System.Console.WriteLine("Stiskněte Enter pro ukončení...");
         System.Console.ReadLine();
