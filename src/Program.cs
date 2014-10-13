@@ -12,6 +12,7 @@ class Program
     static void Main(string[] args)
     {
 
+        // vytvoření pomocné třídy pro práci s podpisy
         Utils utils = new Utils();
 
         // načtení dokumentu XML k podpisu

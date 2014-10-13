@@ -23,7 +23,7 @@ public class Utils
     public XmlDocument Sign(XmlDocument doc, X509Certificate2 cert)
     {
         // před podepisováním z dokumentu odstraníme komentáře (.NET s nimi má problémy pokud se kombinují s XPath transformacemi)
-        XmlDocument strippedDoc = RemoveCommentsAndPIs(doc);
+        XmlDocument strippedDoc = RemoveComments(doc);
 
         // definice mapování prefixů na jmenné prostory
         XmlNamespaceManager manager = new XmlNamespaceManager(strippedDoc.NameTable);
@@ -165,7 +165,7 @@ public class Utils
 
     // Pomocná metoda pro odstranění komentářů z dokumetu
     // Ponechány jsou jen důležité části XML -- elementy, atributy a textové uzly
-    public XmlDocument RemoveCommentsAndPIs(XmlDocument doc)
+    public XmlDocument RemoveComments(XmlDocument doc)
     {
         // vytvoření kopie dokumentu
         XmlDocument result = new XmlDocument();
