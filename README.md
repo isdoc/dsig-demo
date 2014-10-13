@@ -23,7 +23,7 @@ zpùstí prùvodce importem certifikátu.
 ### Správce certifikátù
 
 Pøi práci s digitálními podpisy v prostøedí Windows je užiteèné používat správce certifikátù. Ten lze spustit pomocí **Start -> Spustit -> 
-certmgr.msc **
+certmgr.msc**
 
 Osobní certifikáty je možné spravovat na záložce **Personal -> Cetificates** (Osobní -> Certifikáty).
 
