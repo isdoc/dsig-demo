@@ -48,13 +48,7 @@ class Program
         Console.WriteLine("Ukládám podepsaný dokument do priklad-podepsany2.isdoc...");
         doubleSignedDoc.Save("../../../data/priklad-podepsany2.isdoc");
 
-        /*
-        XmlDocument doc2 = new XmlDocument();
-        doc2.PreserveWhitespace = true;           // bílé znaky musíme zachovat, jinak se špatně spočte hash
-        doc2.Load("../../../data/priklad-podepsany.isdoc");
-        System.Console.WriteLine(utils.Verify(doc2));
-         */
-
+        System.Console.WriteLine("Stiskněte Enter pro ukončení...");
         System.Console.ReadLine();
 
     }

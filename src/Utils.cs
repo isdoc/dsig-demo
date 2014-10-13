@@ -102,10 +102,7 @@ public class Utils
         return result;
     }
 
-    // vrátí certifikát identifikovaný pomocí CN z uživatelského úložiště certifikátů
-    // CN subjektu, jehož certifikátem budeme podepisovat
-    //string subjekt = "SERIALNUMBER=P111870, CN=Ing. Jiří Kosek, OU=1, O=Ing. Jiří Kosek [IČ 71612998], C=CZ";  // ukázka CN vydávaného CA PostSignum
-    //string subjekt = "SERIALNUMBER=P654321 - DEMO certifikát, CN=Jan Novák (Test), OU=P654321, C=CZ";
+    // vrátí certifikát identifikovaný pomocí Subject name z uživatelského úložiště certifikátů
     public X509Certificate2 GetCertificate(String subject)
     {
         // otevření uživatelského úložiště certifikátů
