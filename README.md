@@ -47,5 +47,10 @@ certmgr.msc**
 
 Osobní certifikáty je možné spravovat na záložce **Personal -> Cetificates** (**Osobní -> Certifikáty**).
 
+## Kontakt
+
+Autorem ukázkové aplikace je Jirka Kosek. V případě, že v kódu naleznete nějakou chybu, nejlépe ji zadejte
+přímo v rozhraní GitHubu na stránce https://github.com/isdoc/dsig-demo/issues
+
 
 
