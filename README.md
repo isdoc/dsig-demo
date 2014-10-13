@@ -6,8 +6,15 @@ si můžete všechny soubory stáhnout jako jeden archiv z adresy https://github
 ## Požadavky
 
 Ukázková aplikace je napsaná v jazyce C# pro prostředí .NET. Součástí je i projekt pro Visual
-Studio 2013, který dovoluje snadné spouštění aplikace. Visual Studio je možné získat ve verzi Exprss zdarma
+Studio 2013, který dovoluje snadné spouštění aplikace. Visual Studio je možné získat ve verzi Express zdarma
 na adrese http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx
+
+> Elektronické podpisy a PKI je poměrně komplexní obor. Před psaním jakékoliv aplikace
+> výrazně doporučujeme seznámit se z celou oblastí, aby z neznalosti nebyla do vaší aplikace
+> zanesene bezpečnostní chyba.
+
+> Ukázkové aplikace pro zachování jednoduchosti a názornosti některé věci opomíjejí.
+> Např. v tuto chvíli nekontrolují, zda byl certifikán od svého vydání zneplatněn pomocí CRL.
 
 ### Vygenerování testovacích certifikátů
 
