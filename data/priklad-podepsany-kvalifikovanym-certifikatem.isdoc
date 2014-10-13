@@ -1,0 +1,739 @@
+<Invoice xmlns="http://isdoc.cz/namespace/2013" version="6.0.1">
+  
+
+  <DocumentType>1</DocumentType>
+  
+  
+  
+  <ID>FV-111999/2011</ID>
+  
+  <UUID>7B4C5BE0-288C-11D2-8E62-004095452B84</UUID>
+  
+  <IssueDate>2013-02-28</IssueDate>
+  
+  <TaxPointDate>2013-02-28</TaxPointDate>
+  
+  <VATApplicable>true</VATApplicable>
+  
+  <ElectronicPossibilityAgreementReference>ABC123/90007/2012</ElectronicPossibilityAgreementReference>
+  
+  
+  <Note>Nepovinná poznámka k dokladu</Note>
+
+  <LocalCurrencyCode>CZK</LocalCurrencyCode>
+  
+  
+  <ForeignCurrencyCode>EUR</ForeignCurrencyCode>
+  
+  <CurrRate>25.10</CurrRate>
+  
+  <RefCurrRate>1</RefCurrRate>
+  
+  
+  <Extensions>
+       
+    <extenzeH:UserfieldName xmlns:extenzeH="http://anydomain.cz/branch/developer/head">my user data</extenzeH:UserfieldName>
+    <extenzeH:AdditionalHeadDiscount xmlns:extenzeH="http://anydomain.cz/branch/developer/head">10</extenzeH:AdditionalHeadDiscount>    
+  </Extensions>
+
+  <AccountingSupplierParty>
+    
+    <Party>
+      <PartyIdentification>
+        <UserID>315</UserID>
+        
+        <CatalogFirmIdentification>0</CatalogFirmIdentification>
+        
+        <ID>25097563</ID>
+        
+      </PartyIdentification>
+      <PartyName>
+        <Name>ABRA Software a.s.</Name>
+      </PartyName>
+      <PostalAddress>
+        <StreetName>Jeremiášova</StreetName>
+        <BuildingNumber>1422</BuildingNumber>
+        <CityName>Praha 13</CityName>
+        <PostalZone>15300</PostalZone>
+      	<Country>
+      	  <IdentificationCode>CZ</IdentificationCode>
+      	  <Name>Česká republika</Name>
+      	</Country>        
+      </PostalAddress>
+      <PartyTaxScheme>
+        <CompanyID>CZ25097563</CompanyID>
+        <TaxScheme>VAT</TaxScheme>
+      </PartyTaxScheme>
+      <RegisterIdentification>
+        <RegisterKeptAt>Městského soudu v Praze</RegisterKeptAt>
+        <RegisterFileRef>odd. B, vl. 4475</RegisterFileRef>
+        <RegisterDate>1996-12-31</RegisterDate>
+      </RegisterIdentification>
+      <Contact>
+        <Name>Josef Novák</Name>
+        <Telephone>123456789</Telephone>
+        <ElectronicMail>novak@abra.eu</ElectronicMail>
+      </Contact>
+    </Party>
+  </AccountingSupplierParty>
+
+  <SellerSupplierParty>
+    
+    <Party>
+      <PartyIdentification>
+        <UserID>315</UserID>
+        <CatalogFirmIdentification>0</CatalogFirmIdentification>
+        <ID>25097563</ID>
+      </PartyIdentification>
+      <PartyName>
+        <Name>ABRA Software a.s.</Name>
+      </PartyName>
+      <PostalAddress>
+        <StreetName>Jeremiášova</StreetName>
+        <BuildingNumber>1422</BuildingNumber>
+        <CityName>Praha 13</CityName>
+        <PostalZone>15300</PostalZone>
+        <Country>
+          <IdentificationCode>CZ</IdentificationCode>
+          <Name>Česká republika</Name>
+        </Country>
+      </PostalAddress>
+      <PartyTaxScheme>
+        <CompanyID>CZ25097563</CompanyID>
+        <TaxScheme>VAT</TaxScheme>
+      </PartyTaxScheme>
+      <RegisterIdentification>
+        <RegisterKeptAt>Městského soudu v Praze</RegisterKeptAt>
+        <RegisterFileRef>odd. B, vl. 4475</RegisterFileRef>
+        <RegisterDate>1996-12-31</RegisterDate>
+      </RegisterIdentification>
+      <Contact>
+        <Name>Josef Novák</Name>
+        <Telephone>123456789</Telephone>
+        <ElectronicMail>novak@abra.eu</ElectronicMail>
+      </Contact>
+    </Party>
+  </SellerSupplierParty>
+
+  <AccountingCustomerParty>
+    
+    <Party>
+      <PartyIdentification>
+        <UserID>000001</UserID>
+        <CatalogFirmIdentification>0</CatalogFirmIdentification>
+        <ID>00006947</ID>
+      </PartyIdentification>
+      <PartyName>
+        <Name>Ministerstvo financí ČR</Name>
+      </PartyName>
+      <PostalAddress>
+        <StreetName>Letenská</StreetName>
+        <BuildingNumber>15</BuildingNumber>
+        <CityName>Praha 1</CityName>
+        <PostalZone>11810</PostalZone>
+        <Country>
+          <IdentificationCode>CZ</IdentificationCode>
+          <Name>Česká republika</Name>
+        </Country>
+      </PostalAddress>
+      <PartyTaxScheme>
+        <CompanyID>CZ00006947</CompanyID>
+        <TaxScheme>VAT</TaxScheme>
+      </PartyTaxScheme>
+      <Contact>
+        <Name>Jan Novák</Name>
+        <Telephone>987654321</Telephone>
+        <ElectronicMail>novotny@mfcr.cz</ElectronicMail>
+      </Contact>
+    </Party>
+  </AccountingCustomerParty>
+
+  <BuyerCustomerParty>
+    
+    <Party>
+      <PartyIdentification>
+        <UserID>000001</UserID>
+        <CatalogFirmIdentification>0</CatalogFirmIdentification>
+        <ID>00006947</ID>
+      </PartyIdentification>
+      <PartyName>
+        <Name>Ministerstvo financí ČR</Name>
+      </PartyName>
+      <PostalAddress>
+        <StreetName>Letenská</StreetName>
+        <BuildingNumber>15</BuildingNumber>
+        <CityName>Praha 1</CityName>
+        <PostalZone>11810</PostalZone>
+        <Country>
+          <IdentificationCode>CZ</IdentificationCode>
+          <Name>Česká republika</Name>
+        </Country>
+      </PostalAddress>
+      <PartyTaxScheme>
+        <CompanyID>CZ00006947</CompanyID>
+        <TaxScheme>VAT</TaxScheme>
+      </PartyTaxScheme>
+      <Contact>
+        <Name>Jan Novák</Name>
+        <Telephone>987654321</Telephone>
+        <ElectronicMail>novotny@mfcr.cz</ElectronicMail>
+      </Contact>
+    </Party>
+  </BuyerCustomerParty>
+
+  <OrderReferences>
+    
+    <OrderReference id="Obj1">
+      
+      <SalesOrderID>OP-111222/2011</SalesOrderID>
+      
+      <ExternalOrderID>OV-123111/2011</ExternalOrderID>
+      
+      <IssueDate>2013-01-03</IssueDate>
+      
+    </OrderReference>
+    <OrderReference id="Obj2">
+      
+      <SalesOrderID>OP-111223/2011</SalesOrderID>
+      <ExternalOrderID>OV-123112/2011</ExternalOrderID>
+      <IssueDate>2013-01-20</IssueDate>
+    </OrderReference>
+  </OrderReferences>
+  
+  
+  <DeliveryNoteReferences>
+    
+    <DeliveryNoteReference id="DL1">
+      
+      <ID>DL-45678/2011</ID>
+      
+      <IssueDate>2013-02-28</IssueDate>
+      
+    </DeliveryNoteReference>
+  </DeliveryNoteReferences>
+  
+  
+  
+  <OriginalDocumentReferences>
+    <OriginalDocumentReference id="OrigDoc">
+      <ID>FV-111999/2011</ID>
+      
+      <IssueDate>2013-02-28</IssueDate>
+      
+      <UUID>7B4C5BE0-288C-11D2-8E62-004095452B84</UUID>
+      
+    </OriginalDocumentReference>
+  </OriginalDocumentReferences>  
+
+  <Delivery>
+    
+    <Party>
+      <PartyIdentification>
+        <UserID>000001</UserID>
+        <CatalogFirmIdentification>0</CatalogFirmIdentification>
+        <ID>00006947</ID>
+      </PartyIdentification>
+      <PartyName>
+        <Name>Ministerstvo financí ČR</Name>
+      </PartyName>
+      <PostalAddress>
+        <StreetName>Letenská</StreetName>
+        <BuildingNumber>15</BuildingNumber>
+        <CityName>Praha 1</CityName>
+        <PostalZone>11810</PostalZone>
+        <Country>
+          <IdentificationCode>CZ</IdentificationCode>
+          <Name>Česká republika</Name>
+        </Country>
+      </PostalAddress>
+      <PartyTaxScheme>
+        <CompanyID>CZ00006947</CompanyID>
+        <TaxScheme>VAT</TaxScheme>
+      </PartyTaxScheme>
+      <Contact>
+        <Name>Jan Novák</Name>
+        <Telephone>987654321</Telephone>
+        <ElectronicMail>novotny@mfcr.cz</ElectronicMail>
+      </Contact>
+    </Party>
+  </Delivery>
+
+  <InvoiceLines>
+    
+    <InvoiceLine>
+      
+      <ID>1</ID>
+      
+      <OrderReference ref="Obj1">
+        
+        <LineID>1</LineID>
+        
+      </OrderReference>
+      <DeliveryNoteReference ref="DL1">
+        
+        <LineID>1</LineID>
+        
+      </DeliveryNoteReference>
+      
+      
+      
+      
+      <OriginalDocumentReference ref="OrigDoc">
+        <LineID>1</LineID>
+        
+      </OriginalDocumentReference>
+      <InvoicedQuantity unitCode="Ks">100</InvoicedQuantity>
+      
+      <LineExtensionAmountCurr>4.30</LineExtensionAmountCurr>
+      
+      <LineExtensionAmount>107.93</LineExtensionAmount>
+      
+      <LineExtensionAmountTaxInclusiveCurr>5.20</LineExtensionAmountTaxInclusiveCurr>
+      <LineExtensionAmountTaxInclusive>130.52</LineExtensionAmountTaxInclusive>
+      <LineExtensionTaxAmount>22.59</LineExtensionTaxAmount>
+      
+      <UnitPrice>1.0793</UnitPrice>
+      
+      <UnitPriceTaxInclusive>1.3052</UnitPriceTaxInclusive>
+      
+      <ClassifiedTaxCategory>
+        <Percent>19</Percent>
+        
+        <VATCalculationMethod>0</VATCalculationMethod>
+        
+      </ClassifiedTaxCategory>
+      <Note>Parfémovaný, vůně strawberry</Note>
+      <Item>
+        <Description>Kapesník papírový NAPPAX NP458</Description>
+        <CatalogueItemIdentification>
+          
+          <ID>1000000000013</ID>
+        </CatalogueItemIdentification>
+        <SellersItemIdentification>
+          
+          <ID>10000001</ID>
+        </SellersItemIdentification>
+        <SecondarySellersItemIdentification>
+          
+          <ID>DE555444333</ID>
+        </SecondarySellersItemIdentification>
+        <TertiarySellersItemIdentification>
+          
+          <ID>NAPPAX 458-1028-30</ID>
+        </TertiarySellersItemIdentification>
+        <BuyersItemIdentification>
+          
+          <ID>999988887777766666</ID>
+        </BuyersItemIdentification>
+        <StoreBatches>
+          
+          <StoreBatch>
+            
+            <Name>Šarže 3A5/2011</Name>
+            
+            <Note>Pozor doprodej staré řady parfémů</Note>
+            
+            <ExpirationDate>2010-12-31</ExpirationDate>
+            
+            <Specification>Dávkování 35</Specification>
+            
+            <Quantity unitCode="Ks">80</Quantity>
+            
+            <BatchOrSerialNumber>B</BatchOrSerialNumber>
+            
+          </StoreBatch>
+          <StoreBatch>
+            <Name>Šarže 3A9/2011</Name>
+            <Note>Nová řada</Note>
+            <ExpirationDate>2015-12-31</ExpirationDate>
+            <Specification>Dávkování 35</Specification>
+            <Quantity unitCode="Ks">20</Quantity>
+            <BatchOrSerialNumber>B</BatchOrSerialNumber>
+          </StoreBatch>
+        </StoreBatches>
+      </Item>
+      <Extensions>
+        
+        <extenzeL:UserfieldName xmlns:extenzeL="http://anydomain.cz/branch/developer/line">my user data</extenzeL:UserfieldName>                                                
+      </Extensions>
+    </InvoiceLine>
+
+    <InvoiceLine>
+      <ID>2</ID>
+      
+      <OrderReference ref="Obj2">
+        
+        <LineID>3</LineID>
+        
+      </OrderReference>
+      <DeliveryNoteReference ref="DL1">
+        
+        <LineID>2</LineID>
+        
+      </DeliveryNoteReference>
+      <InvoicedQuantity unitCode="Ks">1000</InvoicedQuantity>
+      <LineExtensionAmountCurr>8.70</LineExtensionAmountCurr>
+      <LineExtensionAmount>218.37</LineExtensionAmount>
+      <LineExtensionAmountTaxInclusiveCurr>9.50</LineExtensionAmountTaxInclusiveCurr>
+      <LineExtensionAmountTaxInclusive>238.45</LineExtensionAmountTaxInclusive>
+      <LineExtensionTaxAmount>20.08</LineExtensionTaxAmount>
+      <UnitPrice>.21837</UnitPrice>
+      <UnitPriceTaxInclusive>.23845</UnitPriceTaxInclusive>
+      <ClassifiedTaxCategory>
+        <Percent>9</Percent>
+        
+        <VATCalculationMethod>0</VATCalculationMethod>
+      </ClassifiedTaxCategory>
+      <Note>S úpravou LA1</Note>
+      <Item>
+        <Description>Papír barevný XERTEC 120g/L</Description>
+        <CatalogueItemIdentification>
+          <ID>0000000000013</ID>
+        </CatalogueItemIdentification>
+        <SellersItemIdentification>
+          <ID>10000002</ID>
+        </SellersItemIdentification>
+        <SecondarySellersItemIdentification>
+          <ID>ABFN78956546</ID>
+        </SecondarySellersItemIdentification>
+        <TertiarySellersItemIdentification>
+          <ID>XRT 1054/222/100020</ID>
+        </TertiarySellersItemIdentification>
+        <BuyersItemIdentification>
+          <ID>5555444433332222</ID>
+        </BuyersItemIdentification>
+      </Item>
+    </InvoiceLine>
+
+    <InvoiceLine>
+      <ID>3</ID>
+      
+      <DeliveryNoteReference ref="DL1">
+        
+        <LineID>3</LineID>
+        
+      </DeliveryNoteReference>
+      <InvoicedQuantity unitCode="Ks">1</InvoicedQuantity>
+      <LineExtensionAmountCurr>1</LineExtensionAmountCurr>
+      <LineExtensionAmount>25.1</LineExtensionAmount>
+      <LineExtensionAmountTaxInclusiveCurr>1.05</LineExtensionAmountTaxInclusiveCurr>
+      <LineExtensionAmountTaxInclusive>26.355</LineExtensionAmountTaxInclusive>
+      <LineExtensionTaxAmount>1.255</LineExtensionTaxAmount>
+      <UnitPrice>25.1</UnitPrice>
+      <UnitPriceTaxInclusive>26.355</UnitPriceTaxInclusive>
+      <ClassifiedTaxCategory>
+        <Percent>5</Percent>
+        
+        <VATCalculationMethod>0</VATCalculationMethod>
+      </ClassifiedTaxCategory>
+      <Note>Expresní zásilka</Note>
+      <Item>
+        <Description>Služba ve zvláštní sazbě, ekologická přeprava</Description>
+      </Item>
+    </InvoiceLine>
+  </InvoiceLines>
+
+  <NonTaxedDeposits>
+    
+    <NonTaxedDeposit>
+      
+      <ID>ZLV-111888/2011</ID>
+      
+      <VariableSymbol>111888</VariableSymbol>
+      
+      <DepositAmountCurr>1</DepositAmountCurr>
+      
+      <DepositAmount>25.1</DepositAmount>
+      
+    </NonTaxedDeposit>
+  </NonTaxedDeposits>
+
+  <TaxedDeposits>
+    
+    <TaxedDeposit>
+      
+      <ID>DZV-111555/2011</ID>
+      
+      <VariableSymbol>111555</VariableSymbol>
+      
+      <TaxableDepositAmountCurr>4.30</TaxableDepositAmountCurr>
+      
+      <TaxableDepositAmount>107.93</TaxableDepositAmount>
+      
+      <TaxInclusiveDepositAmountCurr>5.20</TaxInclusiveDepositAmountCurr>
+      
+      <TaxInclusiveDepositAmount>130.52</TaxInclusiveDepositAmount>
+      
+      <ClassifiedTaxCategory>
+        <Percent>19</Percent>
+        <VATCalculationMethod>0</VATCalculationMethod>
+      </ClassifiedTaxCategory>
+    </TaxedDeposit>
+    <TaxedDeposit>
+      <ID>DZV-111666/2011</ID>
+      <VariableSymbol />
+      <TaxableDepositAmountCurr>8.70</TaxableDepositAmountCurr>
+      
+      <TaxableDepositAmount>218.37</TaxableDepositAmount>
+      
+      <TaxInclusiveDepositAmountCurr>9.50</TaxInclusiveDepositAmountCurr>
+      
+      <TaxInclusiveDepositAmount>238.45</TaxInclusiveDepositAmount>
+      
+      <ClassifiedTaxCategory>
+        <Percent>9</Percent>
+        <VATCalculationMethod>0</VATCalculationMethod>
+      </ClassifiedTaxCategory>
+    </TaxedDeposit>
+  </TaxedDeposits>
+
+  <TaxTotal>
+    
+    <TaxSubTotal>
+      
+      <TaxableAmountCurr>4.30</TaxableAmountCurr>
+      
+      <TaxableAmount>107.93</TaxableAmount>
+      
+      <TaxAmountCurr>0.9</TaxAmountCurr>
+      
+      <TaxAmount>22.59</TaxAmount>
+      
+      <TaxInclusiveAmountCurr>5.20</TaxInclusiveAmountCurr>
+      
+      <TaxInclusiveAmount>130.52</TaxInclusiveAmount>
+      
+      <AlreadyClaimedTaxableAmountCurr>4.30</AlreadyClaimedTaxableAmountCurr>
+      
+      <AlreadyClaimedTaxableAmount>107.93</AlreadyClaimedTaxableAmount>
+      
+      <AlreadyClaimedTaxAmountCurr>0.9</AlreadyClaimedTaxAmountCurr>
+      
+      <AlreadyClaimedTaxAmount>22.59</AlreadyClaimedTaxAmount>
+      
+      <AlreadyClaimedTaxInclusiveAmountCurr>5.20</AlreadyClaimedTaxInclusiveAmountCurr>
+      
+      <AlreadyClaimedTaxInclusiveAmount>130.52</AlreadyClaimedTaxInclusiveAmount>
+      
+      <DifferenceTaxableAmountCurr>0</DifferenceTaxableAmountCurr>
+      
+      <DifferenceTaxableAmount>0</DifferenceTaxableAmount>
+      
+      <DifferenceTaxAmountCurr>0</DifferenceTaxAmountCurr>
+      
+      <DifferenceTaxAmount>0</DifferenceTaxAmount>
+      
+      <DifferenceTaxInclusiveAmountCurr>0</DifferenceTaxInclusiveAmountCurr>
+      
+      <DifferenceTaxInclusiveAmount>0</DifferenceTaxInclusiveAmount>
+      
+      <TaxCategory>
+        <Percent>19</Percent>
+        
+      </TaxCategory>
+    </TaxSubTotal>
+    <TaxSubTotal>
+      
+      <TaxableAmountCurr>8.70</TaxableAmountCurr>
+      
+      <TaxableAmount>218.37</TaxableAmount>
+      
+      <TaxAmountCurr>0.8</TaxAmountCurr>
+      
+      <TaxAmount>20.08</TaxAmount>
+      
+      <TaxInclusiveAmountCurr>9.50</TaxInclusiveAmountCurr>
+      
+      <TaxInclusiveAmount>238.45</TaxInclusiveAmount>
+      
+      <AlreadyClaimedTaxableAmountCurr>8.70</AlreadyClaimedTaxableAmountCurr>
+      
+      <AlreadyClaimedTaxableAmount>218.37</AlreadyClaimedTaxableAmount>
+      
+      <AlreadyClaimedTaxAmountCurr>0.80</AlreadyClaimedTaxAmountCurr>
+      
+      <AlreadyClaimedTaxAmount>20.08</AlreadyClaimedTaxAmount>
+      
+      <AlreadyClaimedTaxInclusiveAmountCurr>9.50</AlreadyClaimedTaxInclusiveAmountCurr>
+      
+      <AlreadyClaimedTaxInclusiveAmount>238.45</AlreadyClaimedTaxInclusiveAmount>
+      
+      <DifferenceTaxableAmountCurr>0</DifferenceTaxableAmountCurr>
+      
+      <DifferenceTaxableAmount>0</DifferenceTaxableAmount>
+      
+      <DifferenceTaxAmountCurr>0</DifferenceTaxAmountCurr>
+      
+      <DifferenceTaxAmount>0</DifferenceTaxAmount>
+      
+      <DifferenceTaxInclusiveAmountCurr>0</DifferenceTaxInclusiveAmountCurr>
+      
+      <DifferenceTaxInclusiveAmount>0</DifferenceTaxInclusiveAmount>
+      
+      <TaxCategory>
+        <Percent>9</Percent>
+        
+      </TaxCategory>
+    </TaxSubTotal>
+    <TaxSubTotal>
+      
+      <TaxableAmountCurr>1</TaxableAmountCurr>
+      
+      <TaxableAmount>25.10</TaxableAmount>
+      
+      <TaxAmountCurr>0.1</TaxAmountCurr>
+      
+      <TaxAmount>2.51</TaxAmount>
+      
+      <TaxInclusiveAmountCurr>1.10</TaxInclusiveAmountCurr>
+      
+      <TaxInclusiveAmount>27.61</TaxInclusiveAmount>
+      
+      <AlreadyClaimedTaxableAmountCurr>0</AlreadyClaimedTaxableAmountCurr>
+      
+      <AlreadyClaimedTaxableAmount>0</AlreadyClaimedTaxableAmount>
+      
+      <AlreadyClaimedTaxAmountCurr>0</AlreadyClaimedTaxAmountCurr>
+      
+      <AlreadyClaimedTaxAmount>0</AlreadyClaimedTaxAmount>
+      
+      <AlreadyClaimedTaxInclusiveAmountCurr>0</AlreadyClaimedTaxInclusiveAmountCurr>
+      
+      <AlreadyClaimedTaxInclusiveAmount>0</AlreadyClaimedTaxInclusiveAmount>
+      
+      <DifferenceTaxableAmountCurr>1</DifferenceTaxableAmountCurr>
+      
+      <DifferenceTaxableAmount>25.10</DifferenceTaxableAmount>
+      
+      <DifferenceTaxAmountCurr>1.10</DifferenceTaxAmountCurr>
+      
+      <DifferenceTaxAmount>27.61</DifferenceTaxAmount>
+      
+      <DifferenceTaxInclusiveAmountCurr>0.1</DifferenceTaxInclusiveAmountCurr>
+      
+      <DifferenceTaxInclusiveAmount>2.51</DifferenceTaxInclusiveAmount>
+      
+      <TaxCategory>
+        <Percent>5</Percent>
+        
+      </TaxCategory>
+    </TaxSubTotal>
+    <TaxAmountCurr>0.1</TaxAmountCurr>
+    
+    <TaxAmount>2.51</TaxAmount>
+    
+  </TaxTotal>
+
+  <LegalMonetaryTotal>
+    
+    <TaxExclusiveAmount>351.40</TaxExclusiveAmount>
+    <TaxExclusiveAmountCurr>14</TaxExclusiveAmountCurr>
+    <TaxInclusiveAmount>396.58</TaxInclusiveAmount>
+    <TaxInclusiveAmountCurr>15.80</TaxInclusiveAmountCurr>
+    <AlreadyClaimedTaxExclusiveAmount>326.30</AlreadyClaimedTaxExclusiveAmount>
+    
+    <AlreadyClaimedTaxExclusiveAmountCurr>13</AlreadyClaimedTaxExclusiveAmountCurr>
+    <AlreadyClaimedTaxInclusiveAmount>368.97</AlreadyClaimedTaxInclusiveAmount>
+    <AlreadyClaimedTaxInclusiveAmountCurr>14.70</AlreadyClaimedTaxInclusiveAmountCurr>
+    <DifferenceTaxExclusiveAmount>25.10</DifferenceTaxExclusiveAmount>
+    
+    <DifferenceTaxExclusiveAmountCurr>1</DifferenceTaxExclusiveAmountCurr>
+    <DifferenceTaxInclusiveAmount>27.61</DifferenceTaxInclusiveAmount>
+    <DifferenceTaxInclusiveAmountCurr>1.10</DifferenceTaxInclusiveAmountCurr>
+    <PayableRoundingAmount>-2.51</PayableRoundingAmount>
+    
+    <PayableRoundingAmountCurr>-0.10</PayableRoundingAmountCurr>
+    
+    <PaidDepositsAmount>-25.10</PaidDepositsAmount>
+    
+    <PaidDepositsAmountCurr>-1</PaidDepositsAmountCurr>
+    
+    <PayableAmount>0</PayableAmount>
+    
+    <PayableAmountCurr>0</PayableAmountCurr>
+    
+  </LegalMonetaryTotal>
+
+  <PaymentMeans>
+    
+    
+    
+    <Payment>
+      
+      <PaidAmount>0</PaidAmount>
+      
+      <PaymentMeansCode>10</PaymentMeansCode>
+      
+      <Details>
+        
+        <DocumentID>PP-455123/2011</DocumentID>
+        
+        <IssueDate>2013-05-27</IssueDate>
+        
+      </Details>
+    </Payment>
+    <Payment>
+      
+      <PaidAmount>0</PaidAmount>
+      
+      <PaymentMeansCode>42</PaymentMeansCode>
+      
+      <Details>
+        
+        <PaymentDueDate>2013-03-13</PaymentDueDate>
+        
+        <ID>1234567890</ID>
+        
+        <BankCode>0800</BankCode>
+        
+        <Name>Česká spořitelna, a.s.</Name>
+        
+        <IBAN>CZ12345678901234567890</IBAN>
+        
+        <BIC>GIBACZPX</BIC>
+        
+        <VariableSymbol>111999</VariableSymbol>
+        
+        <ConstantSymbol>0308</ConstantSymbol>
+        
+        <SpecificSymbol>105512</SpecificSymbol>
+        
+      </Details>
+    </Payment>
+    <Payment>
+      
+      <PaidAmount>0</PaidAmount>
+      <PaymentMeansCode>42</PaymentMeansCode>
+      <Details>
+        <PaymentDueDate>2013-06-30</PaymentDueDate>
+        <ID>1234567890</ID>
+        <BankCode>0800</BankCode>
+        <Name>Česká spořitelna, a.s.</Name>
+        <IBAN>CZ12345678901234567890</IBAN>
+        <BIC>GIBACZPX</BIC>
+        <VariableSymbol>111999</VariableSymbol>
+        <ConstantSymbol>0308</ConstantSymbol>
+        <SpecificSymbol>105512</SpecificSymbol>
+      </Details>
+    </Payment>
+    <AlternateBankAccounts>
+      
+      <AlternateBankAccount>
+        
+        <ID>45798465465465</ID>
+        
+        <BankCode>0100</BankCode>
+        <Name>Komerční banka, a.s.</Name>
+        <IBAN>CZ1546556565454687987</IBAN>
+        <BIC>KOBACZPX</BIC>
+      </AlternateBankAccount>
+      <AlternateBankAccount>
+        <ID>98654623265464</ID>
+        <BankCode>0300</BankCode>
+        <Name>Československá obchodní banka, a.s.</Name>
+        <IBAN>CZ1546556565454687987</IBAN>
+        <BIC>CEKOCZPP</BIC>
+      </AlternateBankAccount>
+    </AlternateBankAccounts>
+  </PaymentMeans>
+<Signature Id="Signature-1" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116"><XPath xmlns:dsig="http://www.w3.org/2000/09/xmldsig#">not(ancestor-or-self::dsig:Signature)</XPath></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><DigestValue>1jRAJ5Nr+f+saI08iTDTquVMe7o/o6TG3yVeYNrGEL4=</DigestValue></Reference></SignedInfo><SignatureValue>pMMAVQLoFF0VLFHdBu3TsTkFuoEu5nnv3x5mp014NOD12iB2acyZ/N2mBkuIGbCBKrTEHHchjoS7SHS53y/zJB2RKBGs/5Du4hCBboRxsIDpoER6tdLjx5rkAFJH7Dv5uG6sSClWtYY6Fn39Fuib+EJwSArrAFMAkv9qQwFnCN9NClZLPYdVla1xMliz20MjfN+AbGWzs3RGjy6666bUhWfO4DPiuWEbmSmO+yBdtaeHxfahAiV7TM4INe5s7vpGG/XgJmHce+6fhwES1mY65Yq204oZ1ebBJfMXtWQlOtP4NpIntZGUREJCsPUgEH6SvydFmHr+sIQpSjswvYBPvw==</SignatureValue><KeyInfo><X509Data><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></Invoice>
