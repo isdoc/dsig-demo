@@ -1,5 +1,8 @@
 ﻿# Ukázková aplikace pro podepisování a přidání časového razítka do dokumentů ISDOC
 
+Ukázkovou aplikaci si můžete naklonovat pomocí prostředků verzovacího systému Git. Alternativně
+si můžete všechny soubory stáhnout jako jeden archiv z adresy https://github.com/isdoc/dsig-demo/archive/master.zip
+
 ## Požadavky
 
 Ukázková aplikace je napsaná v jazyce C# pro prostředí .NET. Součástí je i projekt pro Visual
