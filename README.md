@@ -1,31 +1,31 @@
-# Uk·zkov· aplikace pro podepisov·nÌ a p¯id·nÌ ËasovÈho razÌtka do dokument˘ ISDOC
+Ôªø# Uk√°zkov√° aplikace pro podepisov√°n√≠ a p≈ôid√°n√≠ ƒçasov√©ho raz√≠tka do dokument≈Ø ISDOC
 
-## Poûadavky
+## Po≈æadavky
 
-Uk·zkov· aplikace je napsan· v jazyce C# pro prost¯edÌ .NET. SouË·stÌ je i projekt pro Visual
-Studio 2013, kter˝ dovoluje snadnÈ spouötÏnÌ aplikace. Visual Studio je moûnÈ zÌskat ve verzi Exprss zdarma
+Uk√°zkov√° aplikace je napsan√° v jazyce C# pro prost≈ôed√≠ .NET. Souƒç√°st√≠ je i projekt pro Visual
+Studio 2013, kter√Ω dovoluje snadn√© spou≈°tƒõn√≠ aplikace. Visual Studio je mo≈æn√© z√≠skat ve verzi Exprss zdarma
 na adrese http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx
 
-### Vygenerov·nÌ testovacÌch certifik·t˘
+### Vygenerov√°n√≠ testovac√≠ch certifik√°t≈Ø
 
-Aplikace pro podepisov·nÌ pouûÌv· testovacÌ certifik·ty. Ty je moûnÈ vygenerovat pomocÌ p¯Ìkazu `makecert`.
-P¯Ìkaz je dostupn˝ po spuötÏnÌ **Visual Studio Command Prompt**.
+Aplikace pro podepisov√°n√≠ pou≈æ√≠v√° testovac√≠ certifik√°ty. Ty je mo≈æn√© vygenerovat pomoc√≠ p≈ô√≠kazu `makecert`.
+P≈ô√≠kaz je dostupn√Ω po spu≈°tƒõn√≠ **Visual Studio Command Prompt**.
 
 ````
-makecert -r -pe -n "CN=Jan Nov·k" -ss My
-makecert -r -pe -n "CN=Jana Proch·zkov·" -ss My
+makecert -r -pe -n "CN=Jan Nov√°k" -ss My
+makecert -r -pe -n "CN=Jana Proch√°zkov√°" -ss My
 ````
 
-Certifik·ty si m˘ûete vygenerovat v˝öe uveden˝m postupem znovu, nebo je m˘ûete importovat. StaËÌ
-otev¯Ìt soubory `novak.pfx` a `prochazkova.pfx` uloûenÈ v adres·¯i `data`. Prost¯edÌ Windows automaticky
-zp˘stÌ pr˘vodce importem certifik·tu.
+Certifik√°ty si m≈Ø≈æete vygenerovat v√Ω≈°e uveden√Ωm postupem znovu, nebo je m≈Ø≈æete importovat. Staƒç√≠
+otev≈ô√≠t soubory `novak.pfx` a `prochazkova.pfx` ulo≈æen√© v adres√°≈ôi `data`. Prost≈ôed√≠ Windows automaticky
+zp≈Øst√≠ pr≈Øvodce importem certifik√°tu.
 
-### Spr·vce certifik·t˘
+### Spr√°vce certifik√°t≈Ø
 
-P¯i pr·ci s digit·lnÌmi podpisy v prost¯edÌ Windows je uûiteËnÈ pouûÌvat spr·vce certifik·t˘. Ten lze spustit pomocÌ **Start -> Spustit -> 
+P≈ôi pr√°ci s digit√°ln√≠mi podpisy v prost≈ôed√≠ Windows je u≈æiteƒçn√© pou≈æ√≠vat spr√°vce certifik√°t≈Ø. Ten lze spustit pomoc√≠ **Start -> Spustit -> 
 certmgr.msc**
 
-OsobnÌ certifik·ty je moûnÈ spravovat na z·loûce **Personal -> Cetificates** (OsobnÌ -> Certifik·ty).
+Osobn√≠ certifik√°ty je mo≈æn√© spravovat na z√°lo≈æce **Personal -> Cetificates** (**Osobn√≠ -> Certifik√°ty**).
 
 
 
