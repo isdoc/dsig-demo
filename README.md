@@ -12,13 +12,13 @@ Aplikace pro podepisování používá testovací certifikáty. Ty je možné vy
 Příkaz je dostupný po spuštění **Visual Studio Command Prompt**.
 
 ````
-makecert -r -pe -n "CN=Jan Novák" -ss My
-makecert -r -pe -n "CN=Jana Procházková" -ss My
+makecert -a sha256 -len 2048 -r -pe -n "CN=Jan Novák" -ss My -sy 24
+makecert -a sha256 -len 2048 -r -pe -n "CN=Jana Procházková" -ss My -sy 24
 ````
 
 Certifikáty si můžete vygenerovat výše uvedeným postupem znovu, nebo je můžete importovat. Stačí
 otevřít soubory `novak.pfx` a `prochazkova.pfx` uložené v adresáři `data`. Prostředí Windows automaticky
-způstí průvodce importem certifikátu.
+spustí průvodce importem certifikátu. Certifikáty jsou chráněny heslem `heslo`.
 
 ### Správce certifikátů
 
