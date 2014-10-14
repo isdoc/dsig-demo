@@ -6,7 +6,6 @@ using System.Xml;
 using System.Threading.Tasks;
 using System.Security.Cryptography.X509Certificates;
 
-
 class Program
 {
     static void Main(string[] args)
@@ -57,6 +56,14 @@ class Program
             Console.WriteLine("Všechny podpisy jsou v pořádku.");
         else
             Console.WriteLine("Podpis(y) se nepodařilo ověřit.");
+
+        // podepsání a přidání časového razítka
+        doc.Load("../../../data/priklad-podepsany.isdoc");
+        XmlDocument signedWithTSDoc = utils.SignWithTimestamp(doc, cert);
+
+        // uložení podepsaného dokumentu
+        Console.WriteLine("Ukládám podepsaný dokument do priklad-podepsany-casove-razitko.isdoc...");
+        signedWithTSDoc.Save("../../../data/priklad-podepsany-casove-razitko.isdoc");
 
         System.Console.WriteLine("Stiskněte Enter pro ukončení...");
         System.Console.ReadLine();
