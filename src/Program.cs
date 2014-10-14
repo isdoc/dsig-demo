@@ -59,7 +59,7 @@ class Program
 
         // podepsání a přidání časového razítka
         doc.Load("../../../data/priklad-podepsany.isdoc");
-        XmlDocument signedWithTSDoc = utils.SignWithTimestamp(doc, cert);
+        XmlDocument signedWithTSDoc = utils.SignWithTimestamp(doc, cert, "https://www.postsignum.cz/DEMOTSA/TSS_user/", "demoTSA", "demoTSA2010");
 
         // uložení podepsaného dokumentu
         Console.WriteLine("Ukládám podepsaný dokument do priklad-podepsany-casove-razitko.isdoc...");

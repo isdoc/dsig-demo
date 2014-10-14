@@ -106,7 +106,7 @@ public class Utils
 
     // Třída podepíše certifikátem dokument XML a přidá časové razítko
     // Pokud je již dokument podepsaný, přidá se další podpis
-    public XmlDocument SignWithTimestamp(XmlDocument doc, X509Certificate2 cert)
+    public XmlDocument SignWithTimestamp(XmlDocument doc, X509Certificate2 cert, string tsURL, string tsUsername, string tsPassword)
     {
         // před podepisováním z dokumentu odstraníme komentáře (.NET s nimi má problémy pokud se kombinují s XPath transformacemi)
         XmlDocument strippedDoc = RemoveComments(doc);
@@ -257,11 +257,11 @@ public class Utils
         byte[] reqData = request.GetEncoded();
 
         // inicializace požadavku na timestamp server
-        HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create("https://www.postsignum.cz/DEMOTSA/TSS_user/");
+        HttpWebRequest httpReq = (HttpWebRequest)WebRequest.Create(tsURL);
         httpReq.Method = "POST";
         httpReq.ContentType = "application/timestamp-query";
         httpReq.ContentLength = reqData.Length;
-        httpReq.Credentials = new NetworkCredential("demoTSA", "demoTSA2010");
+        httpReq.Credentials = new NetworkCredential(tsUsername, tsPassword);
 
         // odeslání požadavku na timestamp server
         Stream reqStream = httpReq.GetRequestStream();
